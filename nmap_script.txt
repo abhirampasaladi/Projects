@@ -1,0 +1,11 @@
+# nmap stealth and version scan scripts:
+     
+import subprocess
+
+def NMAP_Stealth_Scan(IP_address):
+      subprocess.call(["nmap","-sV","-sS",IP_address])
+
+IP=input("Enter the IP Address of target machine")
+NMAP_Stealth_Scan(IP)
+
+
